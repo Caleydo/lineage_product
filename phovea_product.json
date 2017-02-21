@@ -1,0 +1,22 @@
+[
+  {
+    "type": "web",
+    "label": "lineage",
+    "repo": "Caleydo/lineage",
+    "branch": "master",
+    "additional": []
+  },
+  {
+    "type": "api",
+    "label": "lineage_server",
+    "repo": "phovea/phovea_server",
+    "branch": "develop",
+    "additional": [
+      {
+        "name": "lineage_server",
+        "repo": "Caleydo/lineage_server",
+        "branch": "master"
+      }
+    ]
+  }
+]
