@@ -20,9 +20,8 @@
     ],
     "data": [
       {
-        "name": "lineage_server",
-        "repo": "Caleydo/lineage_server",
-        "branch": "master"
+        "type": "repo",
+        "repo": "Caleydo/lineage_server"
       }
     ]
   }
