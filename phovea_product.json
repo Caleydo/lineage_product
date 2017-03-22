@@ -17,6 +17,13 @@
         "repo": "Caleydo/lineage_server",
         "branch": "master"
       }
+    ],
+    "data": [
+      {
+        "name": "lineage_server",
+        "repo": "Caleydo/lineage_server",
+        "branch": "master"
+      }
     ]
   }
 ]
