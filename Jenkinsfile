@@ -21,9 +21,9 @@ node {
    try {
      withCredentials([usernameColonPassword(credentialsId: 'PHOVEA_GITHUB_CREDENTIALS', variable: 'PHOVEA_GITHUB_CREDENTIALS')]) {
        docker.withRegistry("https://922145058410.dkr.ecr.eu-central-1.amazonaws.com", "ecr:eu-central-1:PHOVEA_AWS_CREDENTIALS") {
-         docker.withRegistry("https://index.docker.io/v1", "PHOVEA_DOCKER_HUB_CREDENTIALS") {
+         docker.withRegistry("", "PHOVEA_DOCKER_HUB_CREDENTIALS") {
            wrap([$class: 'Xvfb']) {
-            sh 'node build.js --skipTests --skipSaveImage --noDefaultTags --pushTo=922145058410.dkr.ecr.eu-central-1.amazonaws.com/caleydo --pushExtra=latest --pushToPublic'
+            sh 'node build.js --skipTests --skipSaveImage --noDefaultTags --pushExtra=latest --pushTo=922145058410.dkr.ecr.eu-central-1.amazonaws.com/caleydo --pushToPublic'
          }
         }
       }
