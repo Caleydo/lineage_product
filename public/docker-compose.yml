@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  lineage:
+    image: 'caleydo/lineage:latest'
+    ports:
+      - '8080:80'
+    links:
+      - 'lineage_server:api'
+  lineage_server:
+    image: 'caleydo/lineage_server:latest'
