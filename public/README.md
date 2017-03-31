@@ -14,19 +14,23 @@ Local Installation
 Phovea uses Docker images to deploy and distribute its applications. In order to locally test Lineage, you need both
 [Docker](https://docs.docker.com/engine/getstarted/step_one/) and [Docker-Compose](https://docs.docker.com/compose/install/) installed on your system.
 
-To launch Lineage, open a terminal/shell navigate to the directory this file and the `docker-compose.yml` is contained and execute:
+To launch Lineage, download [the `docker-compose.yml`](https://raw.githubusercontent.com/Caleydo/lineage_product/latest/public/docker-compose.yml) file contained in this directory and execute:
 
 ```
-docker-compose up -d
+docker-compose up
 ```
 
-This will fetch the published state of the docker images and launch the system locally. Afterwards, open your web-browser and navigate to **http://localhost:8080** to access the application.
+This will fetch the published state of the docker images and launch the system locally. Afterwards, open your web-browser and navigate to [http://localhost:8080](http://localhost:8080) to access the application.
 
-To stop Lineage, execute the following command:
+To stop Lineage, hit `Ctrl+C` or execute the following command:
 
 ```
 docker-compose stop
 ```
+
+Source Code
+------------------
+The main repository for Lineage is at https://github.com/caleydo/lineage
 
 ***
 
