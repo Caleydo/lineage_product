@@ -84,8 +84,7 @@ function downloadDataFile(desc, destDir, cwd) {
       } else {
         downloaded = cloneRepo(desc, cwd);
       }
-      return Promise.all([fs.ensureDirAsync(destDir), downloaded])
-        .then(() => fs.copyAsync(`${cwd}/${desc.name}/data`, `${destDir}/${desc.name}`));
+      return downloaded.then(() => fs.copyAsync(`${cwd}/${desc.name}/data`, `${destDir}/${desc.name}`));
     default:
       console.error('unknown data type:', desc.type);
       return null;
@@ -313,8 +312,8 @@ function buildServerApp(p, dir) {
   if (!argv.skipTests) {
     act = act
       .then(() => console.log(chalk.yellow('create test environment')))
-      .then(() => spawn('pip', 'install -r requirements.txt', {cwd: dir}))
-      .then(() => spawn('pip', 'install -r requirements_dev.txt', {cwd: dir}));
+      .then(() => spawn('pip', 'install --no-cache-dir -r requirements.txt', {cwd: dir}))
+      .then(() => spawn('pip', 'install --no-cache-dir -r requirements_dev.txt', {cwd: dir}));
   }
 
   act = act
