@@ -23,7 +23,7 @@ node {
        docker.withRegistry("https://922145058410.dkr.ecr.eu-central-1.amazonaws.com", "ecr:eu-central-1:PHOVEA_AWS_CREDENTIALS") {
          docker.withRegistry("", "PHOVEA_DOCKER_HUB_CREDENTIALS") {
            wrap([$class: 'Xvfb']) {
-            sh 'node build.js --skipTests --skipSaveImage --noDefaultTags --pushExtra=latest --pushTo=922145058410.dkr.ecr.eu-central-1.amazonaws.com/caleydo --pushToPublic'
+            sh 'node build.js --skipTests --skipSaveImage --noDefaultTags --pushExtra=latest --pushTo=922145058410.dkr.ecr.eu-central-1.amazonaws.com/caleydo'
          }
         }
       }
