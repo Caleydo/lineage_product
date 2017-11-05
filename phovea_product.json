@@ -3,7 +3,7 @@
     "type": "web",
     "label": "lineage",
     "repo": "Caleydo/lineage",
-    "branch": "master",
+    "branch": "lineage_production",
     "additional": []
   },
   {
@@ -16,6 +16,11 @@
         "name": "lineage_server",
         "repo": "Caleydo/lineage_server",
         "branch": "master"
+      },
+      {
+        "name": "phovea_security_flask",
+        "repo": "phovea/phovea_security_flask",
+        "branch": "develop"
       }
     ],
     "data": [
