@@ -16,6 +16,11 @@
         "name": "lineage_server",
         "repo": "Caleydo/lineage_server",
         "branch": "master"
+      },
+      {
+        "name": "phovea_security_flask",
+        "repo": "phovea/phovea_security_flask",
+        "branch": "develop"
       }
     ],
     "data": [
