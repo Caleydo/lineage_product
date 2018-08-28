@@ -10,7 +10,7 @@
     "type": "api",
     "label": "lineage_server",
     "repo": "phovea/phovea_server",
-    "branch": "develop",
+    "branch": "v2.0.0",
     "additional": [
       {
         "name": "lineage_server",
@@ -20,7 +20,7 @@
       {
         "name": "phovea_security_flask",
         "repo": "phovea/phovea_security_flask",
-        "branch": "develop"
+        "branch": "v2.0.0"
       }
     ],
     "data": [
