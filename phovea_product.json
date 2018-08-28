@@ -10,7 +10,7 @@
     "type": "api",
     "label": "lineage_server",
     "repo": "phovea/phovea_server",
-    "branch": "develop",
+    "branch": "v2.0.0",
     "additional": [
       {
         "name": "lineage_server",
